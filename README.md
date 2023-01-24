@@ -1,2 +1,2 @@
-# SE1111
+# SE111
 Remote repo for SE111 HTML/CSS/JS class
