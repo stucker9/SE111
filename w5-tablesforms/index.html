@@ -1,11 +1,12 @@
-e<!--Steven Tucker - se111.-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="author" content="Your Name">
-        <title>Birthday Party Registration Form</title>
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Steve Tucker">
+        <meta name="description" content="Birthday Party Registration form">
+        <link type="text/css" rel="stylesheet" href="styles/style.css">
+        <title>Week 5 | Tables and Forms</title>
     </head>
     <body>
         <h1>Birthday Party Registration Form</h1>
@@ -28,7 +29,7 @@ e<!--Steven Tucker - se111.-->
                     </tr>
                     <tr>
                         <td><label for="last-name">Child's Last Name:</label></td>
-                        <td><input type="text" id="last-name" name="child-last-name" required></td>
+                        <td><input type="text" id="child-last-name" name="child-last-name" required></td>
                     </tr>
                     <tr>
                         <td><label for="child-age">Child's Age:</label></td>
@@ -63,58 +64,63 @@ e<!--Steven Tucker - se111.-->
                         <td></td>
                     </tr>
                     <tr>
-                      <td><label>Size:</label></td>
-                      <td>
-                        <input type="radio" id="size-small" name="size" value="small">
-                        <label for="size-small">Small</label>
-                        <input type="radio" id="size-medium" name="size" value="medium">
-                        <label for="size-medium">Medium</label>
-                        <input type="radio" id="size-large" name="size" value="large">
-                        <label for="size-large">Large</label>
-                      </td>
+                        <td><label>Size:</label></td>
+                        <td>
+                            <input type="radio" id="size-small" name="size" value="small">
+                            <label for="size-small">Small</label>
+                            <input type="radio" id="size-medium" name="size" value="medium">
+                            <label for="size-medium">Medium</label>
+                            <input type="radio" id="size-large" name="size" value="large">
+                            <label for="size-large">Large</label>
+                        </td>
                     </tr>
                     <tr>
-                      <td><label>Soda:</label></td>
-                      <td>
-                        <input type="checkbox" id="coke" name="soda[]" value="coke">
-                        <label for="coke">Coke</label>
-                        <input type="checkbox" id="sprite" name="soda[]" value="sprite">
-                        <label for="sprite">Sprite</label>
-                      </td>
+                        <td><label>Drinks:</label></td>
+                        <td>
+                            <input type="checkbox" id="coke" name="drinks[]" value="coke">
+                            <label for="coke">Coke</label>
+                            <input type="checkbox" id="sprite" name="drinks[]" value="sprite">
+                            <label for="sprite">Sprite</label>
+                            <input type="checkbox" id="lemonade" name="drinks[]" value="lemonade">
+                            <label for="lemonade">Lemonade</label>
+                            <input type="checkbox" id="iced-tea" name="drinks[]" value="iced-tea">
+                            <label for="iced-tea">Iced Tea</label>
+                            <input type="checkbox" id="fruit-punch" name="drinks[]" value="fruit-punch">
+                            <label for="fruit-punch">Fruit Punch</label>
+                        </td>
                     </tr>
                     <tr>
-                      <td><label>Drinks:</label></td>
-                      <td>
-                        <select id="drinks" name="drinks">
-                          <option value="fruit-punch">Fruit Punch</option>
-                          <option value="lemonade">Lemonade</option>
-                          <option value="iced-tea">Iced Tea</option>
-                        </select>
-                      </td>
+                        <td><label>Cake:</label></td>
+                        <td>
+                            <input type="checkbox" id="chocolate-cake" name="cake[]" value="chocolate-cake">
+                            <label for="chocolate-cake">Chocolate</label>
+                            <label for="vanilla-cake">Vanilla</label>
+                        </td>
                     </tr>
                     <tr>
-                      <td><label>Cake:</label></td>
-                      <td>
-                        <input type="checkbox" id="chocolate-cake" name="cake[]" value="chocolate-cake">
-                        <label for="chocolate-cake">Chocolate</label>
-                      </td>
+                        <td>
+                            <label>
+                                <h2>Decorations:</h2>
+                            </label>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                      <td><label><h2>Decorations:</h2></label></td>
-                      <td></td>
+                        <td><label>Choose a color scheme for the party:</label></td>
+                        <td>
+                            <input type="color" id="color-scheme" name="color-scheme">
+                        </td>
                     </tr>
                     <tr>
-                      <td><label>Choose a color scheme for the party:</label></td>
-                      <td>
-                        <input type="color" id="color-scheme" name="color-scheme">
-                      </td>
+                        <td><label for="comments">Additional Comments:</label></td>
+                        <td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td>
                     </tr>
                     <tr>
-                      <td><label for="comments">Additional Comments:</label></td>
-                      <td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td>
+                        <td></td>
+                        <td><button type="submit">Submit</button></td>
                     </tr>
-                    <tr>
-                      <td></td>
-                      <td><button type="submit">Submit</button></td>
-                    </tr>
-                    
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
