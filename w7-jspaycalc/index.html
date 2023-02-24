@@ -18,13 +18,13 @@
             <input type="text" id="last-name">
             <br>
             <label for="hours">Hours Worked:</label>
-            <input type="text" id="hours-worked" required>
+            <input type="number" id="hours-worked" required step="1">
             <br>
             <label for="rate">Hourly Rate:</label>
-            <input type="text" id="hourly-rate" required>
+            <input type="number" id="hourly-rate" required step="1">
             <br>
             <label for="tax-rate">Tax Amount:</label>
-            <input type="number" id="tax-rate" value="0.2" required step="0.01"> <!-- 0.01 step makes it "usable" -->
+            <input type="number" id="tax-rate" value="0.2" required step="0.01">
             <br>
             <br>
             <input type="button" id="enter-button" value="Enter">
