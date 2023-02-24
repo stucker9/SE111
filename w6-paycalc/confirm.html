@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Your Name">
+        <title>Confirmation Page</title>
+    </head>
+    <body>
+        <h1>Thank you for submitting the form!</h1>
+        <h2>Parent/Guardian Information:</h2>
+        <p>Parent/Guardian Name: <span id="parent-guardian-name"></span></p>
+        <h2>Child's Information:</h2>
+        <p>Child's First Name: <span id="child-first-name"></span></p>
+        <p>Child's Last Name: <span id="child-last-name"></span></p>
+        <p>Child's Age: <span id="child-age"></span></p>
+        <h2>Date and Time:</h2>
+        <p>Date: <span id="date"></span></p>
+        <p>Start Time: <span id="start-time"></span></p>
+        <p>Number of Guests: <span id="num-guests"></span></p>
+        <h2>Food:</h2>
+        <p>Size: <span id="size"></span></p>
+        <p>Soda: <span id="soda"></span></p>
+        <p>Drinks: <span id="drinks"></span></p>
+        <p>Cake: <span id="cake"></span></p>
+        <h2>Decorations:</h2>
+        <p>Color Scheme: <span id="color-scheme"></span></p>
+        <p>Additional Comments: <span id="comments"></span></p>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById("parent-guardian-name").textContent = urlParams.get('parent-guardian-name');
+            document.getElementById("child-first-name").textContent = urlParams.get('child-first-name');
+            document.getElementById("child-last-name").textContent = urlParams.get('child-last-name');
+            document.getElementById("child-age").textContent = urlParams.get('child-age');
+            document.getElementById("date").textContent = urlParams.get('date');
+            document.getElementById("start-time").textContent = urlParams.get('start-time');
+            document.getElementById("num-guests").textContent = urlParams.get('num-guests');
+            document.getElementById("size").textContent = urlParams.get('size');
+            document.getElementById("soda").textContent = urlParams.getAll('soda').join(", ");
+            document.getElementById("drinks").textContent = urlParams.get('drinks');
+            document.getElementById("cake").textContent = urlParams.getAll('cake').join(", ");
+            document.getElementById("color-scheme").textContent = urlParams.get('color-scheme');
+            document.getElementById("comments").textContent = urlParams.get('comments');
+        </script>
+    </body>
+</html>
