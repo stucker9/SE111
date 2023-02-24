@@ -69,4 +69,22 @@ body {
     cursor: pointer;
     margin-top: 10px;
   }
-  
+  #final {
+    border: 1px solid rgb(87, 86, 86);
+    padding: 15px;
+    background-color: rgb(168, 168, 168);
+    width: 240px;
+    margin: auto;
+}
+
+#final p {
+    font-family: Courier New, monospace;
+    width: 220px;
+    text-align: right;
+    margin: 5px;
+}
+
+#info {
+    font-family: Courier New, monospace;
+    margin-bottom: 10px;
+}
