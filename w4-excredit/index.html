@@ -4,123 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Steve Tucker">
-        <meta name="description" content="Birthday Party Registration form">
+        <meta name="description" content="W4-EXCREDIT">
         <link type="text/css" rel="stylesheet" href="styles/style.css">
-        <title>Week 5 | Tables and Forms</title>
+        <title>W4-EX CREDIT</title>
+        <script src="scripts/script.js"></script>
     </head>
     <body>
-        <h1>Birthday Party Registration Form</h1>
-        <form action="confirm.html" method="GET">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Form Label</th>
-                        <th>Form Field</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label for="parent-guardian-name">Parent/Guardian Name:</label></td>
-                        <td><input type="text" id="parent-guardian-name" name="parent-guardian-name" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="child-first-name">Child's First Name:</label></td>
-                        <td><input type="text" id="child-first-name" name="child-first-name" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="last-name">Child's Last Name:</label></td>
-                        <td><input type="text" id="child-last-name" name="child-last-name" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="child-age">Child's Age:</label></td>
-                        <td><input type="number" id="child-age" name="child-age" required></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>
-                                <h2>Date and Time:</h2>
-                            </label>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><label for="date">Date:</label></td>
-                        <td><input type="date" id="date" name="date" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="start-time">Start Time:</label></td>
-                        <td><input type="time" id="start-time" name="start-time" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="num-guests">Number of Guests:</label></td>
-                        <td><input type="number" id="num-guests" name="num-guests" required></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>
-                                <h2>Food:</h2>
-                            </label>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><label>Size:</label></td>
-                        <td>
-                            <input type="radio" id="size-small" name="size" value="small">
-                            <label for="size-small">Small</label>
-                            <input type="radio" id="size-medium" name="size" value="medium">
-                            <label for="size-medium">Medium</label>
-                            <input type="radio" id="size-large" name="size" value="large">
-                            <label for="size-large">Large</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Drinks:</label></td>
-                        <td>
-                            <input type="checkbox" id="coke" name="drinks[]" value="coke">
-                            <label for="coke">Coke</label>
-                            <input type="checkbox" id="sprite" name="drinks[]" value="sprite">
-                            <label for="sprite">Sprite</label>
-                            <input type="checkbox" id="lemonade" name="drinks[]" value="lemonade">
-                            <label for="lemonade">Lemonade</label>
-                            <input type="checkbox" id="iced-tea" name="drinks[]" value="iced-tea">
-                            <label for="iced-tea">Iced Tea</label>
-                            <input type="checkbox" id="fruit-punch" name="drinks[]" value="fruit-punch">
-                            <label for="fruit-punch">Fruit Punch</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Cake:</label></td>
-                        <td>
-                            <input type="checkbox" id="chocolate-cake" name="cake[]" value="chocolate-cake">
-                            <label for="chocolate-cake">Chocolate</label>
-                            <label for="vanilla-cake">Vanilla</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>
-                                <h2>Decorations:</h2>
-                            </label>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><label>Choose a color scheme for the party:</label></td>
-                        <td>
-                            <input type="color" id="color-scheme" name="color-scheme">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="comments">Additional Comments:</label></td>
-                        <td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><button type="submit">Submit</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
+        <div class="poster-container">
+            <img src="images/poster.jpg" alt="Movie Poster">
+          </div>
+          <div class="trailer-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QgAU2RJHfvE" title="Movie Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
     </body>
 </html>
