@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #c0c0c0;
+  text-align: center;
 }
 h1 {
   text-align: center;
@@ -16,6 +17,9 @@ p {
   font-size: 18px;
   color: #555;
   animation: moveInRight 1s ease-out;
+}
+table {
+  margin: auto;
 }
 .poster-container {
   background-color: #333;
